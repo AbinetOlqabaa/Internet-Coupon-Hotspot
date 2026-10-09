@@ -1,0 +1,6 @@
+{
+  "name": "Internet Coupon Hotspot Kernel",
+  "description": "Minimal production-oriented full-stack kernel and technical landing harness for the Android-first Internet Coupon Hotspot application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
