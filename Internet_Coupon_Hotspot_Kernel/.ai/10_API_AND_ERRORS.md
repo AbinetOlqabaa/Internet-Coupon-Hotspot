@@ -1,0 +1,3 @@
+# API Contracts and Errors
+
+Target route groups: `/api/v1/auth`, `/owner`, `/customers`, `/packages`, `/coupons`, `/payments`, `/sessions`, `/gateways`, `/analytics`, `/loyalty`, `/notifications`, `/ai`, `/settings`, `/audit`, `/health`, `/readiness`. Validate every input. Paginate collections and allowlist filters/sorts. Use stable errors `{error:{code,message,requestId,details?}}`. Use 400/422 validation, 401 unauthenticated, 403 unauthorized, 404 missing, 409 state/idempotency conflict, 429 rate limit, 503 dependency unavailable, and generic 500 with request ID. Never leak stacks or secrets. External calls need timeout, bounded retry/backoff, circuit breaker and idempotency where appropriate.

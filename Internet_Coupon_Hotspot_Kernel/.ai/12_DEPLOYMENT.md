@@ -1,0 +1,3 @@
+# Deployment and Environment
+
+Separate local, test, sandbox, staging and production credentials/databases. Keep real keys, gateway credentials, Wi-Fi passwords and database secrets out of source. Validate required environment variables; use HTTPS, secure cookies, narrow CORS, secret management, structured logs with request IDs, redaction, health/readiness, migrations, backups and restore tests. Inspect actual Google AI Studio limitations: do not assume it provisions production databases, signs Android packages, securely stores production secrets, runs durable background jobs or controls physical hotspot hardware. Document any work that must happen outside the builder.

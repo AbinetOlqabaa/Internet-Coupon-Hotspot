@@ -1,0 +1,7 @@
+# AI Provider Routing and Features
+
+Useful AI: owner copilot over authorized aggregates; demand/revenue forecasts with uncertainty and minimum-data warnings; explainable customer cohorts; gateway/service quality summaries from actual telemetry; support drafts; anomaly detection; report summaries; package experiment recommendations. AI recommendations never independently mark payment paid, authorize access, disconnect customers, change prices, issue refunds or grant bonuses.
+
+Provider registry stores provider/model, hosted/local type, endpoint, encrypted key reference, capabilities, free/paid status, priority, enabled state, timeout/retry, budget, health, quota evidence/freshness and privacy policy. Free-first routing uses official quota APIs when available, observed headers or explicitly labeled estimates otherwise. It cannot universally discover every key's remaining free quota. Use eligible free models first, then other free models, then paid fallback only when explicitly enabled and within budget. Never rotate keys to evade limits/terms. Distinguish 401/403, 429/quota, timeout and provider outage; use bounded retries, jitter, circuit breakers, budget caps and audit. Mask keys; never return stored raw keys.
+
+Treat Ollama/on-device Android models as optional experimental capability, not guaranteed. Check runtime/device RAM/storage/thermal capability and get consent before large downloads. Hosted/local fallbacks must degrade gracefully.

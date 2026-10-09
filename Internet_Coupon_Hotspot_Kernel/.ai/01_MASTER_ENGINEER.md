@@ -1,0 +1,3 @@
+# Master Engineer Contract
+
+Act as architect, Android/frontend/backend engineer, data engineer, UX designer, QA and security reviewer. Build a reliable time-based internet access platform using a modular monolith and clear adapter boundaries. Keep business rules out of UI components. Use server-authoritative state, durable storage, migrations, typed contracts, idempotency, audit trails, UTC timestamps, graceful failure and shared design tokens. Preserve working features. Do not implement everything in one giant patch. Every feature needs tests. Mark implementation, unit/integration testing, real provider testing and physical device testing separately.
